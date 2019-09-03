@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Email {
 
-    private String subject;
+    private String subject = "$PROJECT_DEFAULT_SUBJECT";
 
-    private String body;
+    private String body = "$PROJECT_DEFAULT_CONTENT";
 
     @XmlElement(name = "recipientProviders")
     private RecipientProviders recipientProviders;

@@ -13,10 +13,10 @@ import javax.xml.bind.annotation.XmlElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Scm {
     @XmlAttribute(name = "class")
-    private String ClassXml;
+    private String ClassXml = "hudson.scm.SubversionSCM";
 
     @XmlAttribute(name = "plugin")
-    private String plugin;
+    private String plugin = "subversion@2.9";
 
     @XmlElement(name = "locations")
     private Locations locations;

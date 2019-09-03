@@ -8,5 +8,5 @@ import javax.xml.bind.annotation.XmlAccessorType;
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Info {
-    private String propertiesFilePath = "";
+    private String propertiesFilePath = "${WORKSPACE}/env.conf";
 }
