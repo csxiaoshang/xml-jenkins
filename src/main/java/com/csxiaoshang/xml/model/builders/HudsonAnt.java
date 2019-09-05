@@ -9,11 +9,17 @@ import javax.xml.bind.annotation.XmlAccessorType;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class HudsonAnt {
 
+    /**
+     * Ant 构建步骤
+     */
     private String targets;
 
     private String antName;
 
     private String buildFile = "${WORKSPACE}/builddir/build.xml";
 
+    /**
+     * Ant 构建参数
+     */
     private String properties;
 }

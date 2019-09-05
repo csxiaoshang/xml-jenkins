@@ -10,6 +10,9 @@ import javax.xml.bind.annotation.XmlElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Publishers {
 
-    @XmlElement(name = "hudson.plugins.emailext.ExtendedEmailPublisher")
+    /**
+     * 注解注释后 便不适用jenkins邮箱发送功能
+     */
+    //@XmlElement(name = "hudson.plugins.emailext.ExtendedEmailPublisher")
     private HudsonEmail hudsonEmail;
 }

@@ -26,7 +26,7 @@ import java.util.Optional;
 /**
  * 获取configXml接口工具类
  */
-@Slf4j
+
 public class XmlUtils {
 
 
@@ -134,7 +134,7 @@ public class XmlUtils {
         Optional.ofNullable(getScm(project))
                 .map(scm -> scm.getBranches())
                 .map(branches -> branches.getHudsonbranch())
-                .ifPresent(hudsonBranch -> hudsonBranch.setName(branch));
+                .ifPresent(hudsonBranch -> hudsonBranch.setName("*/"+branch));
     }
 
     /**

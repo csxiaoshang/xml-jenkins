@@ -9,8 +9,14 @@ import javax.xml.bind.annotation.XmlAccessorType;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class HudsonGradle {
 
+    /**
+     * gradle 构建使用参数
+     */
     private String switches;
 
+    /**
+     * gradle 构建步骤
+     */
     private String tasks;
 
     private String rootBuildScriptDir;

@@ -3,6 +3,7 @@ package com.csxiaoshang.xml.model.root;
 import com.csxiaoshang.xml.XmlUtils;
 import com.csxiaoshang.xml.model.Properties;
 import com.csxiaoshang.xml.model.scm.Scm;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 import javax.xml.bind.JAXBContext;
@@ -83,7 +84,9 @@ public class ProjectTest {
 
     @Test
     public void testGetConfigXml() throws ClassNotFoundException, InstantiationException, IllegalAccessException, JAXBException {
-        System.out.println(XmlUtils.getConfigXml());
+        Project project = XmlUtils.getProject();
+        XmlUtils.setGitUrl(project,"https://gtasfdafsdfa");
+        System.out.println(XmlUtils.getConfigXml(project));
     }
 
 }
